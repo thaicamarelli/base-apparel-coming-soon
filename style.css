@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+h1 span{
+    color: hsl(0, 36%, 70%);
+    font-weight: 100;
+    font-size: 60px;
+}
+
+.main-text{
+    font-size: 60px;
+    padding-top: 5rem;
+    padding-left: 8rem;
+    padding-right: 38%;
+}
+
+.main-div{
+    text-align: justify;
+}
+
+.error-text{
+    color: hsl(0, 93%, 68%);
+    margin-left: 5px;
+}
+
+
+@media (min-width: 1019px){ /* se maior que 1060 faça*/
+    .grid {
+        display:flex;
+        flex-direction: row-reverse;
+    }
+    
+    main{
+        background-image: url("./images/bg-pattern-desktop.svg");
+        background-repeat: no-repeat;
+    }
+
+    p{
+        color: hsl(0, 36%, 70%);
+        padding-right: 16rem;
+        padding-left: 8rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    #span-padding{
+        margin-right: 8rem;
+    }
+
+    .logo-div{
+        padding: 2rem;
+        display: inline-block;
+        width: 80%;
+    }
+
+    #logo-img{
+        margin: 30px 10%;
+    }
+
+    .img-div{
+        position: relative;
+        top: -10rem;
+    }
+
+    .email{
+        border-radius: 35px;
+        padding: 15px 24px;
+        width: 50%;
+        border: 1px hsl(0, 36%, 70%) solid;
+        background-image: linear-gradient(135deg,hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+        /* margin-bottom: 20px; */
+        margin-left: 8rem;
+    }
+
+    .email-error{
+        border: 1px hsl(0, 93%, 68%) solid;
+        background-image: url("./images/icon-error.svg");
+        background-repeat: no-repeat;
+        background-position: 82% 45%;
+        border-radius: 35px;
+        padding: 15px 24px;
+        width: 50%;
+        margin-left: 8rem;
+    }
+
+    .button{
+        width: 12%;
+        height: 55px;
+        border-radius: 40px;
+        padding: 10px;
+        cursor: pointer;
+        background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+        border: none;
+        margin-left: -63px;
+    }
+
+    .button:hover{
+        background-image: linear-gradient(135deg, hsl(0, 63%, 97%), hsl(0, 74%, 79%));
+    }
+
+    input::placeholder{
+        color: hsla(0, 37%, 76%, 0.769);
+        font-size: 16px;
+    }
+}
+
+
+/* mobile grid */
+
+@media (max-width: 1019px){ /* se menor que 375 faça */ 
+
+    .grid{
+      background-image: linear-gradient(135deg,hsl(0, 42%, 95%), hsl(0, 100%, 98%));
+    }
+
+    h1 span{
+        font-size: 39px;
+        padding-right: 10px;
+    }
+
+    p{
+        font-size: 13px;
+        padding: 1px 43px;
+        color: hsl(0, 36%, 70%);
+    }
+
+    .img-div{
+        height: 300px;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        object-position: 100% 20%;
+    }
+    .logo-div{
+        width: 40%;
+        padding: 8%;
+    }
+
+    .main-text{
+        font-size: 39px;
+        padding: 60px 70px 10px;
+    }
+
+    #span-padding{
+        padding-left: 20px;
+    }
+
+    .form-div{
+        padding: 20px;
+    }
+
+    .email{
+        border-radius: 25px;
+        padding: 10px 20px;
+        width: 80%;
+        margin-bottom: 10px;
+        border: 1px hsl(0, 36%, 70%) solid;
+        background-image: linear-gradient(135deg,hsl(0, 42%, 94%), hsl(0, 100%, 98%));
+    }
+
+    .email-error{
+        border-radius: 25px;
+        padding: 10px 20px;
+        width: 80%;
+        margin-bottom: 10px;
+        border: 1px hsl(0, 93%, 68%) solid;
+        background-image: url("./images/icon-error.svg");
+        background-repeat: no-repeat;
+        background-position: 80% 45%;
+    }
+
+    .button{
+        width: 19%;
+        height: 46px;
+        border-radius: 30px;
+        padding: 10px;
+        margin-left: -50px;
+        cursor: pointer;
+        background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+        border: none;
+    }
+    
+    input::placeholder{
+        font-size: 14px;
+        color: hsl(0, 36%, 70%);
+    }
+
+    .main-div{
+        text-align: center;
+    }
+
+}
+
+
